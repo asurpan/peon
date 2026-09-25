@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEÓN - Oposiciones Sevilla y SAS | Test de Preparación</title>
+    <meta name="description" content="Aplicación independiente de preparación de exámenes tipo test para Peón de Mantenimiento del Ayuntamiento de Sevilla y Servicio Andaluz de Salud (SAS).">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #0077b6;
+            --dark: #0d1b2a;
+            --light: #f8f9fa;
+            --accent: #ff9800;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: var(--light);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+        .disclaimer-banner {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 2px solid #ffeeba;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+        .disclaimer-banner strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.05rem;
+            color: #856404;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+        }
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .cta-box {
+            text-align: center;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            margin-top: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #e68a00;
+            transform: translateY(-2px);
+        }
+        footer {
+            background: var(--dark);
+            color: #ccc;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #4da6ff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>PEÓN - Oposiciones Sevilla & SAS</h1>
+        <p class="subtitle">Herramienta Independiente de Preparación de Exámenes Tipo Test</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Cláusula de Exención de Responsabilidad Gubernamental -->
+        <div class="disclaimer-banner">
+            <strong>⚠️ AVISO LEGAL Y EXENCIÓN DE RESPONSABILIDAD GUBERNAMENTAL:</strong>
+            Esta aplicación móvil y su sitio web son herramientas de estudio <strong>independientes y privadas</strong>. 
+            <strong>NO representan, no están afiliadas ni tienen vinculación oficial con ninguna entidad gubernamental</strong>, incluyendo el Servicio Andaluz de Salud (SAS), la Junta de Andalucía, el Ayuntamiento de Sevilla o cualquier otra administración pública.<br><br>
+            Los cuestionarios y materiales de estudio están basados en temarios y boletines públicos de libre acceso (BOJA, BOE, Ordenanzas Municipales) recopilados exclusivamente con fines educativos y de autoevaluación.
+        </div>
+
+        <h2>Preparación Completa para tu Oposición</h2>
+        <p>Prepara tu examen de Peón y Oficial de Mantenimiento con 700 preguntas adaptadas a los temarios de oficios y normativa pública.</p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>📚 14 Temas Oficiales</h3>
+                <p>Albañilería, Electricidad, Fontanería, Jardinería, Pintura, Carpintería, Herrería, Limpieza, PRL y Normativa Pública (Constitución, LBRL, TREBEP, Convenio y SAS).</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎙️ Asistente de Voz AI</h3>
+                <p>Estudia sin mirar la pantalla. La app lee las preguntas en voz alta y te permite responder dictando <em>"la uno"</em>, <em>"la dos"</em> o <em>"la tres"</em>.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⏱️ Simulacros Reales</h3>
+                <p>Exámenes de 80 preguntas aleatorias con temporizador oficial para evaluar tu nivel en condiciones reales de oposición.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔄 Repaso de Errores</h3>
+                <p>Guarda automáticamente todas tus falladas para que puedas repasarlas hasta dominarlas al 100%.</p>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h2>Disponible en Google Play Store</h2>
+            <p style="margin-bottom: 20px;">Descarga la aplicación en Google Play y comienza a preparar tu plaza hoy mismo.</p>
+            <a href="#" class="btn">Disponible en Google Play</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PEÓN Oposiciones - Desarrollo Independiente por JOSEMAN.</p>
+        <p style="margin-top: 10px;">
+            <a href="privacidad.html">Política de Privacidad</a> | 
+            <a href="mailto:asurpan@gmail.com">Contacto de Soporte</a>
+        </p>
+    </footer>
+
+</body>
+</html>
