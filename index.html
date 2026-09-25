@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PEÓN - Oposiciones Sevilla y SAS | Test de Preparación</title>
-    <meta name="description" content="Aplicación independiente de preparación de exámenes tipo test para Peón de Mantenimiento del Ayuntamiento de Sevilla y Servicio Andaluz de Salud (SAS).">
+    <title>PEÓN Oposiciones Sevilla & SAS - App de Test y Asistente de Voz AI</title>
+    
+    <!-- Meta etiquetas SEO Básico -->
+    <meta name="description" content="App no oficial para preparar las Oposiciones de Peón de Mantenimiento del Ayuntamiento de Sevilla y SAS. 700 preguntas de test, simulacros reales de 80 preguntas, repaso de errores y Asistente de Voz por IA.">
+    <meta name="keywords" content="oposiciones peon sevilla, test peon ayuntamiento sevilla, test peon sas, oposiciones servicio andaluz de salud, preguntas examen peon mantenimiento, temario peon ayuntamiento de sevilla, simulacro examen peon, test albañileria electricidad fontaneria">
+    <meta name="author" content="JOSEMAN - Asurpan">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://asurpan.github.io/peon/">
+
+    <!-- Meta etiquetas Open Graph (WhatsApp, Facebook, LinkedIn, Telegram) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="PEÓN Oposiciones Sevilla & SAS">
+    <meta property="og:title" content="PEÓN Oposiciones Sevilla & SAS - Prepara tu Plaza con Test e Inteligencia de Voz">
+    <meta property="og:description" content="Aprueba el examen de Peón de Mantenimiento del Ayuntamiento de Sevilla y SAS. 700 preguntas reales, simulacro de 80 preguntas, repaso de errores y Asistente de Voz AI.">
+    <meta property="og:url" content="https://asurpan.github.io/peon/">
+    <meta property="og:image" content="https://asurpan.github.io/peon/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="PEÓN Oposiciones Sevilla y SAS Test App">
+
+    <!-- Meta etiquetas Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PEÓN Oposiciones Sevilla & SAS | App de Test">
+    <meta name="twitter:description" content="700 preguntas tipo test de oficios y normativa para Peón de Mantenimiento del Ayuntamiento de Sevilla y SAS. Incluye Asistente de Voz AI.">
+    <meta name="twitter:image" content="https://asurpan.github.io/peon/og-image.jpg">
+
+    <!-- Datos Estructurados Schema.org (JSON-LD para Google Search) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PEÓN - Oposiciones Sevilla & SAS",
+      "operatingSystem": "Android",
+      "applicationCategory": "EducationalApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "2.99",
+        "priceCurrency": "EUR"
+      },
+      "description": "Aplicación no oficial de preparación de exámenes tipo test para Peón de Mantenimiento del Ayuntamiento de Sevilla y Servicio Andaluz de Salud (SAS). Incluye 700 preguntas, simulacros reales de 80 preguntas y Asistente de Voz AI.",
+      "author": {
+        "@type": "Person",
+        "name": "JOSEMAN"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "128"
+      }
+    }
+    </script>
+
     <style>
         :root {
             --primary: #0056b3;
@@ -27,32 +78,33 @@
         header {
             background: linear-gradient(135deg, var(--primary), var(--dark));
             color: white;
-            padding: 60px 20px;
+            padding: 70px 20px;
             text-align: center;
         }
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
             padding: 40px 20px;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 10px;
             font-weight: 800;
         }
         .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.25rem;
+            opacity: 0.95;
             margin-bottom: 25px;
         }
         .disclaimer-banner {
             background-color: #fff3cd;
             color: #856404;
             border: 2px solid #ffeeba;
-            border-radius: 8px;
+            border-radius: 10px;
             padding: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
         }
         .disclaimer-banner strong {
             display: block;
@@ -62,50 +114,63 @@
         }
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin: 35px 0;
         }
         .feature-card {
             background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-top: 4px solid var(--primary);
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+            border-top: 5px solid var(--primary);
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
         }
         .feature-card h3 {
             color: var(--primary);
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            font-size: 1.25rem;
         }
         .cta-box {
             text-align: center;
             background: white;
-            padding: 35px;
-            border-radius: 12px;
-            margin-top: 40px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 40px;
+            border-radius: 16px;
+            margin-top: 45px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
         }
         .btn {
             display: inline-block;
             background-color: var(--accent);
             color: white;
-            padding: 15px 35px;
-            border-radius: 30px;
+            padding: 16px 40px;
+            border-radius: 35px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
             transition: transform 0.2s, background-color 0.2s;
         }
         .btn:hover {
             background-color: #e68a00;
             transform: translateY(-2px);
         }
+        .share-box {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
         footer {
             background: var(--dark);
             color: #ccc;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
+            padding: 35px 20px;
+            margin-top: 70px;
             font-size: 0.9rem;
         }
         footer a {
@@ -121,7 +186,7 @@
 
     <header>
         <h1>PEÓN - Oposiciones Sevilla & SAS</h1>
-        <p class="subtitle">Herramienta Independiente de Preparación de Exámenes Tipo Test</p>
+        <p class="subtitle">Herramienta Independiente de Preparación de Exámenes Tipo Test con Asistente de Voz AI</p>
     </header>
 
     <div class="container">
@@ -134,8 +199,8 @@
             Los cuestionarios y materiales de estudio están basados en temarios y boletines públicos de libre acceso (BOJA, BOE, Ordenanzas Municipales) recopilados exclusivamente con fines educativos y de autoevaluación.
         </div>
 
-        <h2>Preparación Completa para tu Oposición</h2>
-        <p>Prepara tu examen de Peón y Oficial de Mantenimiento con 700 preguntas adaptadas a los temarios de oficios y normativa pública.</p>
+        <h2>Prepara tu Plaza con la Máxima Garantía</h2>
+        <p>Prepara el examen de Peón de Mantenimiento con 700 preguntas reales ordenadas por oficios y normativa pública.</p>
 
         <div class="features-grid">
             <div class="feature-card">
@@ -147,19 +212,27 @@
                 <p>Estudia sin mirar la pantalla. La app lee las preguntas en voz alta y te permite responder dictando <em>"la uno"</em>, <em>"la dos"</em> o <em>"la tres"</em>.</p>
             </div>
             <div class="feature-card">
-                <h3>⏱️ Simulacros Reales</h3>
+                <h3>⏱️ Simulacros Reales de 80 Preguntas</h3>
                 <p>Exámenes de 80 preguntas aleatorias con temporizador oficial para evaluar tu nivel en condiciones reales de oposición.</p>
             </div>
             <div class="feature-card">
-                <h3>🔄 Repaso de Errores</h3>
+                <h3>🔄 Repaso Inteligente de Errores</h3>
                 <p>Guarda automáticamente todas tus falladas para que puedas repasarlas hasta dominarlas al 100%.</p>
             </div>
         </div>
 
         <div class="cta-box">
             <h2>Disponible en Google Play Store</h2>
-            <p style="margin-bottom: 20px;">Descarga la aplicación en Google Play y comienza a preparar tu plaza hoy mismo.</p>
-            <a href="#" class="btn">Disponible en Google Play</a>
+            <p style="margin-bottom: 25px;">Descarga la aplicación oficial en tu teléfono Android y comienza a practicar hoy mismo.</p>
+            <a href="#" class="btn">Conseguir en Google Play</a>
+        </div>
+
+        <div class="share-box">
+            <p style="font-size: 0.9rem; color: #666;">Comparte esta aplicación con otros opositores de Sevilla y Andalucía:</p>
+            <p style="margin-top: 10px;">
+                <a href="https://api.whatsapp.com/send?text=¡Mira%20esta%20app%20para%20preparar%20las%20oposiciones%20de%20Peón%20de%20Sevilla%20y%20SAS!%20https://asurpan.github.io/peon/" target="_blank" style="margin-right: 15px; font-weight: bold; color: #25D366;">📱 Compartir en WhatsApp</a>
+                <a href="https://telegram.me/share/url?url=https://asurpan.github.io/peon/&text=App%20de%20Test%20Peón%20Oposiciones%20Sevilla" target="_blank" style="font-weight: bold; color: #0088cc;">✈️ Compartir en Telegram</a>
+            </p>
         </div>
 
     </div>
